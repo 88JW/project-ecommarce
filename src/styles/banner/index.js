@@ -8,8 +8,8 @@ export const BannerContainer = styled(Box)(({ matches, theme }) => ({
     width: "100%",
     height: "100%",
     padding: "0px 0px",
-    background: Colors.light_gray,
-
+    // background: "#C8E1BB",
+    // background: Colors.shaft,
 
     [theme.breakpoints.down("md")]: {
         justifyContent: 'center',
@@ -33,11 +33,15 @@ export const BannerContent = styled(Box)(() => ({
 export const BannerImage = styled("img")(({ src, theme }) => ({
     src: `url(${src})`,
     width: "500px",
+
+    // background: '#C8E1BB',
     [theme.breakpoints.down("md")]: {
         width: "350px",
+
     },
     [theme.breakpoints.down("sm")]: {
         width: "320px",
+
     },
 }));
 
@@ -47,6 +51,7 @@ export const BannerTitle = styled(Typography)(({ matches, theme }) => ({
     marginBottom: "20px",
     [theme.breakpoints.down('sm')]: {
         fontSize: '42px',
+        display: 'none',
     }
 }));
 

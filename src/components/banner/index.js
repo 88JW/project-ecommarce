@@ -10,7 +10,7 @@ export default function Banner() {
 
     return (
         <BannerContainer>
-            <BannerImage src="/images/banner3.jpg" />
+            <BannerImage src="/images/banner5.png" />
             <BannerContent>
                 <BannerTitle variant='h2'>Oregano Shop</BannerTitle>
                 <Typography variant='h6'>Come and by good stuff</Typography>

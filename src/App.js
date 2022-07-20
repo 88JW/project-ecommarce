@@ -1,12 +1,12 @@
 import { ThemeProvider } from "@mui/system";
-import { Button, Container } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
 
 import { useEffect } from 'react';
 import theme from './styles/theme';
 import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Slider from "./components/slider";
-
+import Products from "./components/products";
 
 
 function App() {
@@ -27,10 +27,14 @@ function App() {
         <Appbar />
         <Banner />
         <Slider />
-        <Button variant='contained'>TEST</Button>
+        <Box display="flex" justifyContent={"center"} sx={{ padding: 4 }}>
+          <Typography variant="h4">Our spices:</Typography>
+        </Box>
+        <Products />
+        <Button variant='contained'>1.47</Button>
 
       </Container>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 

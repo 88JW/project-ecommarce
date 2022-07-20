@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const messages = [
 
-    "Free delivery from 50 PLN",
+    "Free delivery from 20 dolars",
     "Free return of the purchased product",
     "Only fresh stuff",
 
