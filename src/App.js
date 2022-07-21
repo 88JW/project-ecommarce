@@ -7,6 +7,7 @@ import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Slider from "./components/slider";
 import Products from "./components/products";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
         <Box display="flex" justifyContent={"center"} sx={{ padding: 4 }}>
           <Typography variant="h4">Our spices:</Typography>
         </Box>
-        <Products />
-        <Button variant='contained'>1.47</Button>
+        <Products /><h1>2.27</h1>
+        <Footer />
+
 
       </Container>
     </ThemeProvider >
