@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+
 // import { darken, lighten } from "polished";
 
 export const DrawerWidth = 250;
@@ -53,6 +54,25 @@ const theme = createTheme({
                 disableElevation: true,
             },
         },
+        MuiDrawer: {
+            styleOverrides: {
+                paper: {
+                    width: 250,
+                    background: Colors.shaft,
+                    borderRadius: '0px 50px 50px 0px',
+                    borderRight: `5px solid #405C31`,
+                    padding: '10px'
+                }
+            }
+
+        },
+        MuiDivider: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: Colors.primary
+                }
+            }
+        }
     }
     //     MuiTooltip: {
     //         defaultProps: {

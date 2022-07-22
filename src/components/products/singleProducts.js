@@ -4,10 +4,17 @@ import ProductMeta from "./ProductMeta";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import FitScreenIcon from '@mui/icons-material/FitScreen';
+import useDialogModal from "../../hooks/useDialogModal";
+import ProductDetail from "../producdetail";
+import InfoIcon from '@mui/icons-material/Info';
 
 
 
 export default function SingleProducts({ product, matches }) {
+
+    const [ProductDetailsDialog, showProductDetailsDialog, closeProductDetailDialog] =
+        useDialogModal(ProductDetail);
+
 
     return (
         <>
@@ -19,17 +26,18 @@ export default function SingleProducts({ product, matches }) {
                         <ProductFavButton isFav={0} >
                             <FavoriteIcon />
                         </ProductFavButton>
-                        <ProductFavButton isFav={0} >
+                        <ProductFavButton  >
                             <ShareIcon />
                         </ProductFavButton>
-                        <ProductFavButton isFav={0} >
-                            <FitScreenIcon />
+                        <ProductFavButton onClick={() => showProductDetailsDialog()}  >
+                            <InfoIcon />
                         </ProductFavButton>
                     </Stack>
                 </ProductActionsWrapper>
 
             </Product>
             <ProductAddToCart>Add to cart</ProductAddToCart>
+            <ProductDetailsDialog product={product} />
         </>
 
 
