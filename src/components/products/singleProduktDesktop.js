@@ -15,6 +15,8 @@ import useDialogModal from "../../hooks/useDialogModal";
 import ProductDetail from "../producdetail";
 
 
+
+
 export default function SingleProduktDesktop({ product, matches }) {
 
     const [ProductDetailsDialog, showProductDetailsDialog, closeProductDetailDialog] =
@@ -23,6 +25,8 @@ export default function SingleProduktDesktop({ product, matches }) {
 
 
     const [showOptions, setShowOptions] = useState(false);
+
+
 
 
     const handleMousEnter = () => {
@@ -41,7 +45,8 @@ export default function SingleProduktDesktop({ product, matches }) {
                     <FavoriteIcon />
                 </ProductFavButton>
                 {showOptions && (
-                    <ProductAddToCart show={showOptions} variant="contained">
+                    <ProductAddToCart
+                        show={showOptions} variant="contained">
                         Add to Cart
                     </ProductAddToCart>
                 )}

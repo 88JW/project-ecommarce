@@ -12,6 +12,7 @@ import { UIProvider } from "./components/context/ui";
 import SearchBox from "./components/search";
 
 
+
 function App() {
 
   useEffect(() => {
